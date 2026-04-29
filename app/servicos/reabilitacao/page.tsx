@@ -9,6 +9,9 @@ export const metadata: Metadata = {
   title: "Reabilitação Domiciliar Traumato-Ortopédica SP | Stella Sobral",
   description:
     "Reabilitação traumato-ortopédica domiciliar especializada em SP. Recupere função, mobilidade e força após lesões, cirurgias e traumas musculoesqueléticos. Itaim Bibi, Jardins e Moema.",
+  alternates: {
+    canonical: "https://stellasobral.com.br/servicos/reabilitacao",
+  },
   openGraph: {
     title: "Reabilitação Domiciliar Traumato-Ortopédica SP | Stella Sobral",
     description:

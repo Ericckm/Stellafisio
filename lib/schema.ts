@@ -7,9 +7,22 @@ export const localBusinessSchema = {
   "@type": ["MedicalBusiness", "LocalBusiness"],
   name: "Stella Sobral Fisioterapia Domiciliar",
   description:
-    "Fisioterapia domiciliar especializada em reabilitação pós-cirúrgica, geriatria e dores crônicas. Atendimento no Itaim Bibi, Jardins, Moema e Zona Sul de São Paulo.",
+    "Fisioterapia domiciliar especializada em reabilitação pós-cirúrgica, geriatria e dores crônicas. Atendimento em Vila Nova Conceição, Itaim Bibi, Jardins, Faria Lima e Zona Sul de São Paulo.",
   url: BASE_URL,
   telephone: PHONE,
+  image: `${BASE_URL}/logo.png`,
+  address: {
+    "@type": "PostalAddress",
+    addressLocality: "São Paulo",
+    addressRegion: "SP",
+    addressCountry: "BR",
+    description: "Atendimento domiciliar em Vila Nova Conceição, Itaim Bibi, Jardins, Faria Lima e Moema",
+  },
+  geo: {
+    "@type": "GeoCoordinates",
+    latitude: -23.5884,
+    longitude: -46.6758,
+  },
   priceRange: "$$",
   currenciesAccepted: "BRL",
   paymentAccepted: "Cartão de Crédito, Débito, PIX, Dinheiro",
@@ -20,7 +33,9 @@ export const localBusinessSchema = {
   ],
   areaServed: [
     { "@type": "City", name: "São Paulo" },
+    { "@type": "Place", name: "Vila Nova Conceição" },
     { "@type": "Place", name: "Itaim Bibi" },
+    { "@type": "Place", name: "Faria Lima" },
     { "@type": "Place", name: "Jardins" },
     { "@type": "Place", name: "Moema" },
     { "@type": "Place", name: "Vila Olímpia" },
@@ -174,7 +189,7 @@ export const faqSchema = {
       name: "Quais bairros de São Paulo são atendidos?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Atendemos no Itaim Bibi, Jardins, Moema, Vila Olímpia, Brooklin, Pinheiros, Vila Mariana e regiões adjacentes. Entre em contato para verificar disponibilidade na sua localização.",
+        text: "Atendemos em Vila Nova Conceição, Itaim Bibi, Faria Lima, Jardins, Moema, Vila Olímpia, Brooklin, Pinheiros, Vila Mariana e regiões adjacentes. Entre em contato para verificar disponibilidade na sua localização.",
       },
     },
     {
