@@ -1,0 +1,103 @@
+"use client";
+
+import { useState } from "react";
+import Reveal from "@/components/Reveal";
+import Link from "next/link";
+
+const faqs = [
+  {
+    q: "Qual o valor da sessão de fisioterapia domiciliar?",
+    a: "Os valores variam conforme o plano de tratamento, a frequência e a especialidade. Entre em contato pelo WhatsApp para receber um orçamento personalizado, sem compromisso. Trabalhamos com pacotes individuais e planos de acompanhamento.",
+  },
+  {
+    q: "O atendimento é particular?",
+    a: "Sim. Todo o atendimento é particular — sem convênios. Isso garante total independência na escolha do protocolo e do tempo de dedicação a cada paciente, sem interferência de planos de saúde.",
+  },
+  {
+    q: "Quais bairros de São Paulo são atendidos?",
+    a: "Atendemos no Itaim Bibi, Jardins, Moema, Vila Olímpia, Brooklin, Pinheiros, Vila Mariana e regiões adjacentes da Zona Sul e Zona Oeste. Entre em contato para verificar disponibilidade na sua localização.",
+  },
+  {
+    q: "Quanto tempo dura cada sessão de fisioterapia domiciliar?",
+    a: "Cada sessão tem duração de 60 minutos. O tempo é inteiramente dedicado ao seu tratamento — sem compartilhamento com outros pacientes.",
+  },
+  {
+    q: "Preciso de encaminhamento médico para iniciar o tratamento?",
+    a: "Não é obrigatório. O fisioterapeuta realiza avaliação independente e possui autonomia profissional para indicar e conduzir o tratamento. Um relatório ou laudo médico pode complementar o histórico, mas não é pré-requisito para começar.",
+  },
+];
+
+function FAQItem({ q, a }: { q: string; a: string }) {
+  const [open, setOpen] = useState(false);
+
+  return (
+    <div className="border-b border-line last:border-0">
+      <button
+        className="w-full flex items-center justify-between gap-4 py-5 text-left group"
+        onClick={() => setOpen(!open)}
+        aria-expanded={open}
+      >
+        <span className="font-heading text-lg font-600 text-verde group-hover:text-verde-light transition-colors">
+          {q}
+        </span>
+        <span
+          className={`shrink-0 w-7 h-7 rounded-full border border-verde/20 flex items-center justify-center text-verde transition-all duration-300 ${open ? "rotate-45 bg-verde text-creme border-verde" : ""}`}
+          aria-hidden="true"
+        >
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+            <path d="M12 5v14M5 12h14" />
+          </svg>
+        </span>
+      </button>
+      {open && (
+        <div className="pb-5 font-body text-sm text-muted leading-relaxed max-w-2xl">
+          {a}
+        </div>
+      )}
+    </div>
+  );
+}
+
+export default function FAQSection() {
+  return (
+    <section className="bg-creme-2 py-20 md:py-28" aria-label="Perguntas frequentes">
+      <div className="max-w-4xl mx-auto px-6">
+
+        <Reveal>
+          <div className="mb-14">
+            <span className="section-label text-terra mb-3 block">Dúvidas</span>
+            <h2
+              className="font-heading font-300 text-verde leading-tight"
+              style={{ fontSize: "clamp(2rem, 5vw, 3.5rem)" }}
+            >
+              Perguntas<br />
+              <em className="font-600 not-italic">frequentes</em>
+            </h2>
+          </div>
+        </Reveal>
+
+        <Reveal delay={100}>
+          <div className="bg-white rounded-2xl border border-line overflow-hidden px-7 divide-y divide-line">
+            {faqs.map((faq) => (
+              <FAQItem key={faq.q} q={faq.q} a={faq.a} />
+            ))}
+          </div>
+        </Reveal>
+
+        <Reveal delay={200}>
+          <p className="mt-8 text-center font-body text-sm text-muted">
+            Tem outra dúvida?{" "}
+            <Link href="/faq" className="text-verde hover:underline">
+              Veja todas as perguntas
+            </Link>{" "}
+            ou{" "}
+            <a href="https://wa.me/5515996758942" target="_blank" rel="noopener noreferrer" className="text-verde hover:underline">
+              fale pelo WhatsApp
+            </a>
+            .
+          </p>
+        </Reveal>
+      </div>
+    </section>
+  );
+}
