@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Reveal from "@/components/Reveal";
+import GlowCard from "@/components/GlowCard";
 
 const stats = [
   {
@@ -56,25 +57,32 @@ export default function Credibility() {
 
         {/* Stella bio strip */}
         <Reveal delay={300}>
-          <div className="mt-16 p-6 md:p-8 rounded-2xl bg-verde/5 border border-verde/10 flex flex-col md:flex-row items-start md:items-center gap-6">
-            <Image
-              src="/stella.jpg"
-              alt="Stella Sobral, fisioterapeuta domiciliar em São Paulo"
-              width={72}
-              height={72}
-              className="shrink-0 w-16 h-16 rounded-full object-cover border-2 border-verde/20"
-              priority
-              unoptimized
-            />
-            <div>
-              <p className="font-heading text-xl font-600 text-verde mb-1">Stella Sobral</p>
-              <p className="font-body text-xs tracking-widest uppercase text-terra mb-2">
-                Fisioterapeuta · CREFITO-3 297082 · São Paulo
-              </p>
-              <p className="font-body text-sm text-muted leading-relaxed max-w-2xl">
-                Pós-graduada em ortopedia e traumatologia, com experiência em disfunções ortopédicas agudas e crônicas — lombalgia, cervicalgia, lesões de ombro, joelho e quadril, entre outras —, reabilitação pós-operatória (artroplastias, ligamentoplastias, cirurgias de coluna e fraturas) e experiência em fisioterapia geriátrica com foco em equilíbrio, marcha e prevenção de quedas. Atendo no Itaim Bibi, Jardins, Moema e região — cuidado especializado e individualizado na sua casa.
-              </p>
-            </div>
+          <div className="mt-16">
+            <GlowCard
+              accentHex="#0099CC"
+              restingBorder="#DDD8D2"
+              bg="bg-creme"
+              className="p-6 md:p-8 flex flex-col md:flex-row items-start md:items-center gap-6"
+            >
+              <Image
+                src="/stella.jpg"
+                alt="Stella Sobral, fisioterapeuta domiciliar em São Paulo"
+                width={72}
+                height={72}
+                className="shrink-0 w-16 h-16 rounded-full object-cover border-2 border-verde/20"
+                priority
+                unoptimized
+              />
+              <div>
+                <p className="font-heading text-xl font-600 text-verde mb-1">Stella Sobral</p>
+                <p className="font-body text-xs tracking-widest uppercase text-terra mb-2">
+                  Fisioterapeuta · CREFITO-3 297082 · São Paulo
+                </p>
+                <p className="font-body text-sm text-muted leading-relaxed max-w-2xl">
+                  Pós-graduada em ortopedia e traumatologia, com experiência em disfunções ortopédicas agudas e crônicas — lombalgia, cervicalgia, lesões de ombro, joelho e quadril, entre outras —, reabilitação pós-operatória (artroplastias, ligamentoplastias, cirurgias de coluna e fraturas) e experiência em fisioterapia geriátrica com foco em equilíbrio, marcha e prevenção de quedas. Atendo no Itaim Bibi, Jardins, Moema e região — cuidado especializado e individualizado na sua casa.
+                </p>
+              </div>
+            </GlowCard>
           </div>
         </Reveal>
       </div>

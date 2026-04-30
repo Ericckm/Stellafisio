@@ -1,6 +1,6 @@
 import type { Post } from "./blog";
 
-const BASE_URL = "https://stellasobral.com.br";
+const BASE_URL = "https://stellasobralfisioterapia.com.br";
 const PHONE = "+55 15 99675-8942";
 const WHATSAPP = "5515996758942";
 
@@ -41,7 +41,7 @@ export const localBusinessSchema = {
     { "@type": "Place", name: "Jardins" },
     { "@type": "Place", name: "Moema" },
     { "@type": "Place", name: "Vila Olímpia" },
-    { "@type": "Place", name: "Brooklin" },
+    { "@type": "Place", name: "Campo Belo" },
     { "@type": "Place", name: "Pinheiros" },
     { "@type": "Place", name: "Vila Mariana" },
     { "@type": "Place", name: "Vila Madalena" },
@@ -67,7 +67,10 @@ export const localBusinessSchema = {
       "Fisioterapeuta especializada em reabilitação ortopédica e atendimento domiciliar em São Paulo.",
     sameAs: [`https://wa.me/${WHATSAPP}`],
   },
-  sameAs: [`https://wa.me/${WHATSAPP}`],
+  sameAs: [
+    `https://wa.me/${WHATSAPP}`,
+    "https://www.instagram.com/fisio.sobral",
+  ],
 };
 
 export const posCircurgicaSchema = {
@@ -153,7 +156,7 @@ export const quiropraxiaSchema = {
 export const liberacaoMiofascialSchema = {
   "@context": "https://schema.org",
   "@type": "MedicalProcedure",
-  name: "Liberação Miofascial Instrumental (IASTM) Domiciliar",
+  name: "Liberação Miofascial Domiciliar",
   description:
     "Terapia de mobilização de tecidos moles assistida por instrumento (IASTM) no domicílio, para aderências fasciais, cicatrizes pós-cirúrgicas e tendinopatias crônicas em São Paulo.",
   procedureType: "Physical Therapy",
@@ -208,6 +211,30 @@ export const faqSchema = {
       acceptedAnswer: {
         "@type": "Answer",
         text: "Não é obrigatório. O fisioterapeuta realiza avaliação independente. Um relatório ou laudo médico pode enriquecer o histórico clínico, mas não é pré-requisito para iniciar o tratamento.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Quando começar a fisioterapia pós-operatória?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "O início ideal depende do tipo de cirurgia e da orientação do cirurgião, mas na maioria dos casos a fisioterapia pode ser iniciada no primeiro ou segundo dia após a alta hospitalar. Quanto mais precoce o início, melhor o controle do edema, da dor e a prevenção de rigidez articular. Entre em contato para orientação específica ao seu caso.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Quanto tempo dura o tratamento de fisioterapia pós-operatória?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "A duração varia conforme o tipo de cirurgia e a evolução do paciente. Em geral, reabilitações pós-artroplastia levam de 8 a 16 semanas; pós-LCA de 4 a 9 meses; cirurgias de ombro de 3 a 6 meses. O protocolo é revisado em cada sessão e adaptado ao seu ritmo de recuperação.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "A fisioterapia acelera a recuperação pós-cirúrgica?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Sim. A fisioterapia pós-operatória iniciada precocemente reduz o tempo de recuperação, controla a dor e o edema, previne rigidez articular e perda muscular, e aumenta as chances de retorno completo às atividades. Pacientes com acompanhamento fisioterapêutico regular apresentam resultados significativamente melhores do que aqueles sem reabilitação estruturada.",
       },
     },
   ],

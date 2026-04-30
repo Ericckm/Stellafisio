@@ -8,10 +8,13 @@ import Testimonials from "@/components/sections/Testimonials";
 import FAQSection from "@/components/sections/FAQ";
 import BlogPreview from "@/components/sections/BlogPreview";
 import CTAFinal from "@/components/sections/CTAFinal";
+import JsonLd from "@/components/JsonLd";
+import { faqSchema } from "@/lib/schema";
 
 export default function HomePage() {
   return (
     <>
+      <JsonLd schema={faqSchema} />
       <Hero />
       <Credibility />
       <Differentials />

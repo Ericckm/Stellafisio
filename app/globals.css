@@ -160,13 +160,19 @@ body::after {
 details summary::-webkit-details-marker { display: none; }
 details summary { list-style: none; }
 
+/* group-open variant for Tailwind v4 */
 details[open] summary .faq-icon {
   transform: rotate(45deg);
+  background-color: var(--color-verde);
+  color: var(--color-creme);
+  border-color: var(--color-verde);
 }
 
 .faq-icon {
-  transition: transform 0.3s ease;
-  display: inline-block;
+  transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* ─── Section divider decorative line ─── */

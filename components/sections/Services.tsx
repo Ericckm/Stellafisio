@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Reveal from "@/components/Reveal";
+import GlowCard from "@/components/GlowCard";
 
 const WHATSAPP = "5515996758942";
 
@@ -43,16 +44,6 @@ const services = [
       "Anos convivendo com lombalgia, cervicalgia ou fibromialgia não significam que isso é \"normal para você\". Identificamos o que sustenta a dor e tratamos com abordagem multimodal — exercício, terapia manual e educação.",
     bullets: ["Lombalgia e hérnia de disco", "Cervicalgia e tensão muscular", "Fibromialgia e sensibilização central", "Tendinites e bursites crônicas"],
     cta: "Acabar com a dor crônica",
-  },
-  {
-    slug: "mobilizacao-neural",
-    accent: "#0085B8",
-    tag: "Mobilização Neural",
-    title: "Quando a Dor Segue o Caminho do Nervo",
-    description:
-      "Nervos com mobilidade reduzida causam dor que irradia, queima e formiga. A mobilização neural restaura o deslizamento adequado entre nervo e tecidos — com especialização em coluna lombar e cervical.",
-    bullets: ["Ciatalgia e lombociatalgia", "Cervicobranquialgia (dor irradiada para o braço)", "Síndrome do túnel do carpo", "Dor neuropática pós-lesão ou pós-cirúrgica"],
-    cta: "Tratar minha dor irradiada",
   },
 ];
 
@@ -145,10 +136,11 @@ export default function Services() {
         {/* ── Featured 2-column cards (above grid) ── */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-6">
           {featuredServices.map((service, i) => (
-            <Reveal key={service.slug} delay={i * 120}>
-              <article
-                className="group flex flex-col h-full rounded-2xl overflow-hidden border transition-all duration-300 hover:shadow-2xl"
-                style={{ borderColor: `${service.accent}30` }}
+            <Reveal key={service.slug} delay={i * 120} className="h-full">
+              <GlowCard
+                accentHex={service.accent}
+                restingBorder={`${service.accent}30`}
+                className="flex flex-col"
               >
                 {/* Card header band */}
                 <div
@@ -188,7 +180,7 @@ export default function Services() {
                     </div>
                   </div>
                 </div>
-                <div className="flex flex-col flex-1 p-7 bg-white">
+                <div className="flex flex-col flex-1 p-7">
                   <p className="font-body text-sm text-muted leading-relaxed mb-6">
                     {service.description}
                   </p>
@@ -236,7 +228,7 @@ export default function Services() {
                     </Link>
                   </div>
                 </div>
-              </article>
+              </GlowCard>
             </Reveal>
           ))}
         </div>

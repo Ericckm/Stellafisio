@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   description:
     "Quiropraxia com instrumentos de alta precisão no domicílio. Alívio de bloqueios articulares, dores vertebrais e tensões musculares. Itaim Bibi, Jardins e Moema — SP.",
   alternates: {
-    canonical: "https://stellasobral.com.br/servicos/quiropraxia-instrumental",
+    canonical: "https://stellasobralfisioterapia.com.br/servicos/quiropraxia-instrumental",
   },
   openGraph: {
     title: "Quiropraxia Instrumental Domiciliar SP | Stella Sobral",

@@ -1,7 +1,7 @@
 import type { MetadataRoute } from "next";
 import { getAllPosts } from "@/lib/blog";
 
-const BASE_URL = "https://stellasobral.com.br";
+const BASE_URL = "https://stellasobralfisioterapia.com.br";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date();
@@ -49,6 +49,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "monthly",
       priority: 0.8,
     },
+
     {
       url: `${BASE_URL}/faq`,
       lastModified: now,

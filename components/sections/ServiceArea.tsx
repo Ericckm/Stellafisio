@@ -1,25 +1,30 @@
 import Reveal from "@/components/Reveal";
+import GlowCard from "@/components/GlowCard";
 
 const zones = [
   {
     name: "Itaim Bibi e entorno",
     neighborhoods: ["Itaim Bibi", "Vila Olímpia", "Vila Nova Conceição", "Campo Belo"],
     primary: true,
+    accent: "#0099CC",
   },
   {
     name: "Jardins e Pinheiros",
     neighborhoods: ["Jardins", "Cerqueira César", "Pinheiros", "Vila Madalena", "Sumarezinho"],
     primary: true,
+    accent: "#005578",
   },
   {
     name: "Moema e adjacências",
     neighborhoods: ["Moema", "Ibirapuera", "Vila Mariana", "Aclimação"],
     primary: false,
+    accent: "#0085B8",
   },
   {
     name: "Outras regiões",
     neighborhoods: ["Consulte disponibilidade para seu bairro"],
     primary: false,
+    accent: "#004A68",
   },
 ];
 
@@ -46,29 +51,55 @@ export default function ServiceArea() {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
           {zones.map((zone, i) => (
-            <Reveal key={zone.name} delay={i * 100}>
-              <article
-                className={`p-6 rounded-2xl border transition-all duration-200 ${
-                  zone.primary
-                    ? "border-terra/30 bg-terra/10"
-                    : "border-creme/10 bg-creme/5"
-                }`}
+            <Reveal key={zone.name} delay={i * 100} className="h-full">
+              <GlowCard
+                accentHex={zone.accent}
+                restingBorder="#005578"
+                bg="bg-white"
+                className="flex flex-col"
               >
-                {zone.primary && (
-                  <span className="inline-block text-[9px] font-body font-600 tracking-widest uppercase text-terra bg-terra/20 px-2 py-0.5 rounded-full mb-3">
-                    Principal
-                  </span>
-                )}
-                <h3 className="font-heading text-lg font-600 text-creme mb-3">{zone.name}</h3>
-                <ul className="flex flex-col gap-1.5" aria-label={`Bairros em ${zone.name}`}>
-                  {zone.neighborhoods.map((n) => (
-                    <li key={n} className="flex items-center gap-2 font-body text-xs text-creme/75">
-                      <span className="w-1 h-1 rounded-full bg-terra/60 flex-shrink-0" aria-hidden="true" />
-                      {n}
-                    </li>
-                  ))}
-                </ul>
-              </article>
+                {/* Header band */}
+                <div
+                  className="relative px-5 pt-5 pb-4 overflow-hidden"
+                  style={{ background: `linear-gradient(135deg, ${zone.accent}18 0%, ${zone.accent}06 100%)` }}
+                >
+                  <div
+                    className="absolute -right-6 -top-6 w-28 h-28 rounded-full opacity-[0.07]"
+                    style={{ backgroundColor: zone.accent }}
+                    aria-hidden="true"
+                  />
+                  {zone.primary && (
+                    <span
+                      className="inline-block text-[9px] font-body font-600 tracking-widest uppercase px-2.5 py-0.5 rounded-full mb-2"
+                      style={{ backgroundColor: `${zone.accent}20`, color: zone.accent }}
+                    >
+                      Principal
+                    </span>
+                  )}
+                  <h3
+                    className="font-heading text-lg font-600 leading-tight"
+                    style={{ color: zone.accent }}
+                  >
+                    {zone.name}
+                  </h3>
+                </div>
+
+                {/* Body */}
+                <div className="flex flex-col flex-1 p-5 pt-4">
+                  <ul className="flex flex-col gap-2" aria-label={`Bairros em ${zone.name}`}>
+                    {zone.neighborhoods.map((n) => (
+                      <li key={n} className="flex items-center gap-2 font-body text-xs text-charcoal/70">
+                        <span
+                          className="w-1.5 h-1.5 rounded-full flex-shrink-0"
+                          style={{ backgroundColor: zone.accent }}
+                          aria-hidden="true"
+                        />
+                        {n}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </GlowCard>
             </Reveal>
           ))}
         </div>

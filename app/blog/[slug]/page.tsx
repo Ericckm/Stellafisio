@@ -23,7 +23,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     description: post.excerpt,
     keywords: [post.keyword],
     alternates: {
-      canonical: `https://stellasobral.com.br/blog/${post.slug}`,
+      canonical: `https://stellasobralfisioterapia.com.br/blog/${post.slug}`,
     },
     openGraph: {
       title: post.title,

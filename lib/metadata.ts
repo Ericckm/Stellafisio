@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 
-const BASE_URL = "https://stellasobral.com.br";
+const BASE_URL = "https://stellasobralfisioterapia.com.br";
 
 export const baseMetadata: Metadata = {
   metadataBase: new URL(BASE_URL),
@@ -75,7 +75,9 @@ export const baseMetadata: Metadata = {
 
     // Técnicas
     "quiropraxia instrumental domiciliar SP",
-    "liberação miofascial IASTM domiciliar SP",
+    "liberação miofascial domiciliar SP",
+
+    "Campo Belo fisioterapia domiciliar SP",
 
     // Marca
     "Stella Sobral fisioterapia",
@@ -144,13 +146,44 @@ export const serviceMeta: Record<string, Metadata> = {
     title: "Fisioterapia para Dores Crônicas e Agudas Domiciliar SP",
     description:
       "Tratamento de lombalgia, cervicalgia, dores musculares agudas e crônicas em casa. Fisioterapeuta domiciliar no Itaim Bibi, Jardins e Pinheiros — SP.",
-    alternates: {
-      canonical: `${BASE_URL}/servicos/dores-cronicas-e-agudas`,
-    },
+    alternates: { canonical: `${BASE_URL}/servicos/dores-cronicas-e-agudas` },
     openGraph: {
       title: "Fisioterapia para Dores Crônicas e Agudas Domiciliar SP | Stella Sobral",
       description:
         "Tratamento de lombalgia, cervicalgia, dores musculares agudas e crônicas em casa. Fisioterapeuta domiciliar no Itaim Bibi, Jardins e Pinheiros.",
+    },
+  },
+  "reabilitacao": {
+    title: "Reabilitação Traumato-Ortopédica Domiciliar SP | Stella Sobral",
+    description:
+      "Reabilitação ortopédica em casa após fraturas, rupturas ligamentares e lesões musculares. Atendimento domiciliar especializado no Itaim Bibi, Jardins e Moema — SP.",
+    alternates: { canonical: `${BASE_URL}/servicos/reabilitacao` },
+    openGraph: {
+      title: "Reabilitação Traumato-Ortopédica Domiciliar SP | Stella Sobral",
+      description:
+        "Reabilitação ortopédica em casa após fraturas, rupturas ligamentares e lesões musculares. Itaim Bibi, Jardins e Moema.",
+    },
+  },
+  "quiropraxia-instrumental": {
+    title: "Quiropraxia Instrumental Domiciliar SP | Stella Sobral",
+    description:
+      "Ajuste articular de alta precisão sem estalidos. Quiropraxia instrumental domiciliar para bloqueios vertebrais, cefaleia tensional e rigidez articular em São Paulo.",
+    alternates: { canonical: `${BASE_URL}/servicos/quiropraxia-instrumental` },
+    openGraph: {
+      title: "Quiropraxia Instrumental Domiciliar SP | Stella Sobral",
+      description:
+        "Ajuste articular de alta precisão sem estalidos. Quiropraxia instrumental domiciliar para bloqueios vertebrais e rigidez articular em São Paulo.",
+    },
+  },
+  "liberacao-miofascial-instrumental": {
+    title: "Liberação Miofascial Domiciliar SP | Stella Sobral",
+    description:
+      "Liberação miofascial com instrumentos especializados — menos dolorosa e mais eficaz. Tratamento domiciliar de tensões musculares, aderências e tendinopatias em São Paulo.",
+    alternates: { canonical: `${BASE_URL}/servicos/liberacao-miofascial-instrumental` },
+    openGraph: {
+      title: "Liberação Miofascial Domiciliar SP | Stella Sobral",
+      description:
+        "Liberação miofascial com instrumentos especializados — menos dolorosa e mais eficaz. Tratamento domiciliar de tensões e aderências em São Paulo.",
     },
   },
 };

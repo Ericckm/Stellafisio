@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   description:
     "Artigos sobre fisioterapia domiciliar, dor lombar, reabilitação pós-cirúrgica e saúde para idosos em São Paulo. Conteúdo por Stella Sobral, fisioterapeuta.",
   alternates: {
-    canonical: "https://stellasobral.com.br/blog",
+    canonical: "https://stellasobralfisioterapia.com.br/blog",
   },
 };
 

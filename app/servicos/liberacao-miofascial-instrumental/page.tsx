@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   description:
     "Liberação miofascial com instrumentos IASTM no domicílio. Tratamento de aderências, cicatrizes e tensões fasciais crônicas. Itaim Bibi, Jardins e Moema — SP.",
   alternates: {
-    canonical: "https://stellasobral.com.br/servicos/liberacao-miofascial-instrumental",
+    canonical: "https://stellasobralfisioterapia.com.br/servicos/liberacao-miofascial-instrumental",
   },
   openGraph: {
     title: "Liberação Miofascial Instrumental Domiciliar SP | Stella Sobral",
