@@ -86,7 +86,7 @@ export default function Footer() {
             © {new Date().getFullYear()} Stella Sobral Fisioterapia Domiciliar. Todos os direitos reservados.
           </p>
           <p className="font-body text-xs text-creme/50">
-            CREFITO-3 · São Paulo — SP
+            CREFITO-3 297082 · São Paulo — SP
           </p>
         </div>
       </div>

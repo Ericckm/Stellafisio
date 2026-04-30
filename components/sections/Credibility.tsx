@@ -8,8 +8,8 @@ const stats = [
     description: "Atendimento exclusivamente na sua residência — sem clínica, sem deslocamento.",
   },
   {
-    value: "CREFITO",
-    label: "Registrada",
+    value: "3/297082",
+    label: "CREFITO",
     description: "Profissional habilitada pelo Conselho Regional de Fisioterapia — CREFITO-3 SP.",
   },
   {
@@ -69,7 +69,7 @@ export default function Credibility() {
             <div>
               <p className="font-heading text-xl font-600 text-verde mb-1">Stella Sobral</p>
               <p className="font-body text-xs tracking-widest uppercase text-terra mb-2">
-                Fisioterapeuta · CREFITO-3 · São Paulo
+                Fisioterapeuta · CREFITO-3 297082 · São Paulo
               </p>
               <p className="font-body text-sm text-muted leading-relaxed max-w-2xl">
                 Especializada em reabilitação domiciliar, com foco em pacientes pós-cirúrgicos, idosos e quadros de dor crônica. Atendo no Itaim Bibi, Jardins, Moema e região — levando cuidado profissional até a sua casa.

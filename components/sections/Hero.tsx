@@ -65,10 +65,18 @@ export default function Hero() {
             <span className="font-300">e Zona Sul de SP</span>
           </h1>
 
-          {/* Subheadline */}
-          <p className="hero-sub font-body font-300 text-creme/88 text-lg md:text-xl leading-relaxed mb-10 max-w-xl">
-            Recuperação especializada no conforto da sua casa — sem filas, sem deslocamento, com atenção totalmente individualizada.
-          </p>
+{/* Subheadline */}
+<p className="hero-sub font-body font-300 text-creme/88 text-lg md:text-xl leading-relaxed mb-10 max-w-xl">
+  <span className="relative inline-block">
+    Recuperação especializada
+    <span
+      className="absolute left-0 -bottom-1 w-full h-[3px] rounded-full"
+      style={{ background: "linear-gradient(90deg, #C4714A 0%, #C4714A88 100%)" }}
+      aria-hidden="true"
+    />
+  </span>{" "}
+  no conforto da sua casa — mais tranquilidade, menos desgaste e um cuidado totalmente individualizado.
+</p>
 
           {/* CTAs */}
           <div className="hero-cta flex flex-col sm:flex-row items-start sm:items-center gap-4">
