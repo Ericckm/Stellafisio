@@ -78,7 +78,14 @@ export default function Services() {
               className="font-heading font-300 text-verde leading-tight"
               style={{ fontSize: "clamp(2rem, 5vw, 3.5rem)" }}
             >
-              Tratamento especializado,<br />
+              <span className="relative inline-block">
+                Tratamento especializado
+                <span
+                  className="absolute left-0 -bottom-1 w-full h-[3px] rounded-full"
+                  style={{ background: "linear-gradient(90deg, #C4714A 0%, #C4714A88 100%)" }}
+                  aria-hidden="true"
+                />
+              </span>,<br />
               <em className="font-600 not-italic">com a tranquilidade e praticidade do atendimento domiciliar</em>
             </h2>
             <p className="font-body text-sm text-muted mt-4 max-w-xl leading-relaxed">
