@@ -9,7 +9,7 @@ export const baseMetadata: Metadata = {
     default: "Fisioterapia Domiciliar no Itaim Bibi: Agende Agora | Stella Sobral",
   },
   description:
-    "Fisioterapia domiciliar especializada em Vila Nova Conceição, Itaim Bibi, Jardins e Faria Lima. Pós-cirúrgica, Idosos e Dores Crônicas. Agende sua avaliação — sem sair de casa.",
+    "Fisioterapia domiciliar em Itaim Bibi, Jardins e Moema. Reabilitação pós-cirúrgica, geriatria e dores crônicas. Agende sua avaliação sem sair de casa.",
   keywords: [
     "fisioterapia domiciliar São Paulo",
     "fisioterapeuta domiciliar SP",
@@ -26,8 +26,21 @@ export const baseMetadata: Metadata = {
     "quiropraxia instrumental domiciliar SP",
     "liberação miofascial IASTM domiciliar SP",
     "Stella Sobral fisioterapia",
+    "fisioterapia para dor nas costas São Paulo",
+    "fisioterapia para dor lombar SP",
+    "reabilitação pós-cirúrgica zona sul SP",
+    "fisioterapeuta em casa São Paulo",
+    "fisioterapia dor no joelho São Paulo",
+    "fisioterapia pós operatório joelho SP",
+    "fisioterapia para idosos zona sul SP",
+    "fisioterapia cervicalgia São Paulo",
+    "fisioterapia fibromialgia domiciliar SP",
+    "reabilitação LCA domiciliar São Paulo",
   ],
   authors: [{ name: "Stella Sobral" }],
+  alternates: {
+    canonical: BASE_URL,
+  },
   openGraph: {
     type: "website",
     locale: "pt_BR",
@@ -35,13 +48,13 @@ export const baseMetadata: Metadata = {
     siteName: "Stella Sobral Fisioterapia Domiciliar",
     title: "Fisioterapia Domiciliar no Itaim Bibi: Agende Agora | Stella Sobral",
     description:
-      "Fisioterapia domiciliar especializada em Vila Nova Conceição, Itaim Bibi, Jardins e Faria Lima. Pós-cirúrgica, Idosos e Dores Crônicas. Agende sua avaliação — sem sair de casa.",
+      "Fisioterapia domiciliar em Itaim Bibi, Jardins e Moema. Reabilitação pós-cirúrgica, geriatria e dores crônicas. Agende sua avaliação sem sair de casa.",
   },
   twitter: {
     card: "summary_large_image",
     title: "Fisioterapia Domiciliar no Itaim Bibi: Agende Agora | Stella Sobral",
     description:
-      "Fisioterapia domiciliar especializada em Vila Nova Conceição, Itaim Bibi, Jardins e Faria Lima. Pós-cirúrgica, Idosos e Dores Crônicas.",
+      "Fisioterapia domiciliar em Itaim Bibi, Jardins e Moema. Reabilitação pós-cirúrgica, geriatria e dores crônicas.",
   },
   robots: {
     index: true,

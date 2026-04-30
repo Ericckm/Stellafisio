@@ -27,9 +27,9 @@ export const localBusinessSchema = {
   currenciesAccepted: "BRL",
   paymentAccepted: "Cartão de Crédito, Débito, PIX, Dinheiro",
   medicalSpecialty: [
-    "Physical Therapy",
-    "Orthopedic Surgery",
-    "Geriatric Medicine",
+    "https://schema.org/PhysicalTherapy",
+    "https://schema.org/Geriatric",
+    "https://schema.org/Osteopathic",
   ],
   areaServed: [
     { "@type": "City", name: "São Paulo" },
