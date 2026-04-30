@@ -53,7 +53,7 @@ export default function Testimonials() {
                   ))}
                 </div>
 
-                <blockquote className="font-heading text-lg font-300 text-charcoal leading-relaxed flex-1 mb-6">
+                <blockquote className="font-reading text-[1.05rem] font-400 text-charcoal leading-relaxed flex-1 mb-6">
                   <span className="text-terra font-600 text-2xl leading-none mr-1" aria-hidden="true">"</span>
                   {t.quote}
                   <span className="text-terra font-600 text-2xl leading-none ml-1" aria-hidden="true">"</span>

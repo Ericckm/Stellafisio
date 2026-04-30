@@ -78,8 +78,8 @@ export default function Services() {
               className="font-heading font-300 text-verde leading-tight"
               style={{ fontSize: "clamp(2rem, 5vw, 3.5rem)" }}
             >
-              Seis especialidades,<br />
-              <em className="font-600 not-italic">uma única saída de casa — a sua</em>
+              Tratamento especializado,<br />
+              <em className="font-600 not-italic">com a tranquilidade e praticidade do atendimento domiciliar</em>
             </h2>
             <p className="font-body text-sm text-muted mt-4 max-w-xl leading-relaxed">
               Atendimento domiciliar especializado no Itaim Bibi, Jardins, Moema, Vila Olímpia e Zona Sul de São Paulo.
@@ -101,13 +101,13 @@ export default function Services() {
 
                 <div className="flex flex-col flex-1 p-6">
                   <span
-                    className="inline-block text-[9px] font-body font-600 tracking-widest uppercase px-3 py-1 rounded-full mb-4 w-fit"
+                    className="inline-block text-[11px] font-body font-600 tracking-widest uppercase px-3 py-1 rounded-full mb-4 w-fit"
                     style={{ backgroundColor: `${service.accent}15`, color: service.accent }}
                   >
                     {service.tag}
                   </span>
 
-                  <h3 className="font-heading text-xl font-600 text-verde leading-tight mb-3">
+                  <h3 className="font-heading text-xl font-700 text-verde leading-tight mb-3">
                     {service.title}
                   </h3>
                   <p className="font-body text-sm text-muted leading-relaxed mb-5">

@@ -103,8 +103,8 @@ export default function Hero() {
               { icon: "✓", text: "Sessões de 60 minutos exclusivas" },
             ].map((item) => (
               <div key={item.text} className="flex items-center gap-2">
-                <span className="text-terra text-sm font-600" aria-hidden="true">{item.icon}</span>
-                <span className="font-body text-xs text-creme/78">{item.text}</span>
+                <span className="text-terra text-base font-600" aria-hidden="true">{item.icon}</span>
+                <span className="font-body text-sm text-creme/88">{item.text}</span>
               </div>
             ))}
           </div>

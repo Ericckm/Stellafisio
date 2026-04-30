@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Cormorant_Garamond, DM_Sans } from "next/font/google";
+import { Cormorant_Garamond, DM_Sans, Lora } from "next/font/google";
 import Script from "next/script";
 import "./globals.css";
 import { baseMetadata } from "@/lib/metadata";
@@ -23,6 +23,15 @@ const dmSans = DM_Sans({
   display: "swap",
 });
 
+const lora = Lora({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+  style: ["normal", "italic"],
+  variable: "--font-lora",
+  display: "swap",
+});
+
+
 export const metadata: Metadata = baseMetadata;
 
 export default function RootLayout({
@@ -31,7 +40,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="pt-BR" className={`${cormorant.variable} ${dmSans.variable}`}>
+    <html lang="pt-BR" className={`${cormorant.variable} ${dmSans.variable} ${lora.variable}`}>
       <head>
         <script
           type="application/ld+json"

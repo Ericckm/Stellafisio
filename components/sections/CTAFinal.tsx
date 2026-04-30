@@ -60,8 +60,8 @@ export default function CTAFinal() {
             "Sem encaminhamento necessário",
             "Resposta rápida",
           ].map((item) => (
-            <span key={item} className="font-body text-xs text-white/50 flex items-center gap-2">
-              <span className="text-white/70" aria-hidden="true">✓</span>
+            <span key={item} className="font-body text-sm text-white/75 flex items-center gap-2">
+              <span className="text-white/90" aria-hidden="true">✓</span>
               {item}
             </span>
           ))}

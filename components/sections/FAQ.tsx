@@ -37,7 +37,7 @@ function FAQItem({ q, a }: { q: string; a: string }) {
         onClick={() => setOpen(!open)}
         aria-expanded={open}
       >
-        <span className="font-heading text-lg font-600 text-verde group-hover:text-verde-light transition-colors">
+        <span className="font-reading text-[1.05rem] font-600 text-verde group-hover:text-verde-light transition-colors">
           {q}
         </span>
         <span
@@ -50,7 +50,7 @@ function FAQItem({ q, a }: { q: string; a: string }) {
         </span>
       </button>
       {open && (
-        <div className="pb-5 font-body text-sm text-muted leading-relaxed max-w-2xl">
+        <div className="pb-5 font-reading text-base font-400 text-muted leading-relaxed max-w-2xl">
           {a}
         </div>
       )}
