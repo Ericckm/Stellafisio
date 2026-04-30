@@ -28,7 +28,7 @@ export default function BlogPreview() {
               <article className="group flex flex-col h-full rounded-2xl border border-line bg-white hover:shadow-xl hover:shadow-verde/5 transition-all duration-300 overflow-hidden">
                 <div
                   className="h-1 w-full transition-all duration-300 group-hover:h-1.5"
-                  style={{ backgroundColor: "#C4714A" }}
+                  style={{ backgroundColor: "#0099CC" }}
                   aria-hidden="true"
                 />
                 <div className="flex flex-col flex-1 p-6">

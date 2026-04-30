@@ -6,7 +6,7 @@ export default function CTAFinal() {
     <section
       className="relative py-24 md:py-32 overflow-hidden"
       style={{
-        background: "linear-gradient(135deg, #C4714A 0%, #A85C38 100%)",
+        background: "linear-gradient(135deg, #0099CC 0%, #007BA8 100%)",
       }}
       aria-label="Agendar fisioterapia domiciliar"
     >

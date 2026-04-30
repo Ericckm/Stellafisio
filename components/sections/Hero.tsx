@@ -14,10 +14,10 @@ export default function Hero() {
         className="absolute inset-0"
         style={{
           background: `
-            radial-gradient(ellipse 80% 60% at 0% 20%, #2A5A40 0%, transparent 60%),
-            radial-gradient(ellipse 60% 80% at 100% 10%, #1C3D2E 0%, transparent 55%),
-            radial-gradient(ellipse 100% 50% at 50% 100%, #0F2419 0%, transparent 65%),
-            #1C3D2E
+            radial-gradient(ellipse 80% 60% at 0% 20%, #005E80 0%, transparent 60%),
+            radial-gradient(ellipse 60% 80% at 100% 10%, #003D5C 0%, transparent 55%),
+            radial-gradient(ellipse 100% 50% at 50% 100%, #002233 0%, transparent 65%),
+            #003D5C
           `,
         }}
         aria-hidden="true"
@@ -71,7 +71,7 @@ export default function Hero() {
     Recuperação especializada
     <span
       className="absolute left-0 -bottom-1 w-full h-[3px] rounded-full"
-      style={{ background: "linear-gradient(90deg, #C4714A 0%, #C4714A88 100%)" }}
+      style={{ background: "linear-gradient(90deg, #0099CC 0%, #0099CC88 100%)" }}
       aria-hidden="true"
     />
   </span>{" "}

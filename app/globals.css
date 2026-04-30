@@ -9,18 +9,18 @@
 
 /* ─── Color palette ─── */
 @theme {
-  --color-verde:        #1C3D2E;
-  --color-verde-light:  #2A5A40;
-  --color-verde-muted:  #2C4A38;
-  --color-verde-pale:   #E8F0EA;
-  --color-creme:        #FAF7F2;
+  --color-verde:        #003854;   /* deep navy — dark sections, headings */
+  --color-verde-light:  #005578;   /* medium navy — hover states */
+  --color-verde-muted:  #004A68;
+  --color-verde-pale:   #EAF6FD;   /* near-white sky tint — subtle bg */
+  --color-creme:        #FAF9F7;
   --color-creme-2:      #F0EBE3;
   --color-creme-3:      #E8E0D5;
-  --color-terra:        #C4714A;
-  --color-terra-light:  #D4855E;
+  --color-terra:        #0099CC;   /* logo blue — primary accent */
+  --color-terra-light:  #33BADC;   /* lighter blue — labels on dark bg */
   --color-charcoal:     #1A1A1A;
-  --color-muted:        #3D5248;
-  --color-line:         #CEC8BF;
+  --color-muted:        #3E5D6E;   /* cool blue-grey — body text on light bg */
+  --color-line:         #DDD8D2;
 }
 
 /* ─── Base ─── */

@@ -63,6 +63,35 @@ export default function Footer() {
               WhatsApp — Agende sua sessão
             </a>
 
+            <a
+              href="https://instagram.com/fisio.sobral"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-3 font-body text-sm text-creme/85 hover:text-creme transition-colors group"
+            >
+              <span className="w-8 h-8 rounded-full bg-creme/10 flex items-center justify-center group-hover:bg-creme/20 transition-colors shrink-0">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" aria-hidden="true">
+                  <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                  <circle cx="12" cy="12" r="4" />
+                  <circle cx="17.5" cy="6.5" r="0.5" fill="currentColor" stroke="none" />
+                </svg>
+              </span>
+              @fisio.sobral
+            </a>
+
+            <a
+              href="mailto:fisio.soobral@gmail.com"
+              className="flex items-center gap-3 font-body text-sm text-creme/85 hover:text-creme transition-colors group"
+            >
+              <span className="w-8 h-8 rounded-full bg-creme/10 flex items-center justify-center group-hover:bg-creme/20 transition-colors shrink-0">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" aria-hidden="true">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                  <polyline points="22,6 12,13 2,6" />
+                </svg>
+              </span>
+              fisio.soobral@gmail.com
+            </a>
+
             <div className="flex items-start gap-3 font-body text-sm text-creme/78">
               <span className="w-8 h-8 rounded-full bg-creme/10 flex items-center justify-center shrink-0 mt-0.5">
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" aria-hidden="true">
@@ -71,7 +100,7 @@ export default function Footer() {
               </span>
               <span>
                 Itaim Bibi, Jardins, Moema<br />
-                Vila Madalena, Pinheiros, Brooklin<br />
+                Vila Madalena, Pinheiros, Campo Belo<br />
                 São Paulo — SP
               </span>
             </div>

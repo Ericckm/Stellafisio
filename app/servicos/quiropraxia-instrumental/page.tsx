@@ -57,7 +57,7 @@ export default function QuiropraxiaInstrumentalPage() {
         className="relative pt-32 pb-20 md:pt-40 md:pb-28 overflow-hidden"
         style={{
           background:
-            "radial-gradient(ellipse 80% 60% at 0% 30%, #2A5A40 0%, transparent 60%), radial-gradient(ellipse 60% 80% at 100% 0%, #1C3D2E 0%, transparent 55%), #1C3D2E",
+            "radial-gradient(ellipse 80% 60% at 0% 30%, #005E80 0%, transparent 60%), radial-gradient(ellipse 60% 80% at 100% 0%, #003D5C 0%, transparent 55%), #003D5C",
         }}
         aria-label="Quiropraxia instrumental domiciliar"
       >

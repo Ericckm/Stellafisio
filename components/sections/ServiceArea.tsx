@@ -3,7 +3,7 @@ import Reveal from "@/components/Reveal";
 const zones = [
   {
     name: "Itaim Bibi e entorno",
-    neighborhoods: ["Itaim Bibi", "Vila Olímpia", "Vila Nova Conceição", "Brooklin"],
+    neighborhoods: ["Itaim Bibi", "Vila Olímpia", "Vila Nova Conceição", "Campo Belo"],
     primary: true,
   },
   {

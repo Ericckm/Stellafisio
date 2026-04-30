@@ -36,7 +36,7 @@ export default function BlogPage() {
           {posts.map((post, i) => (
             <Reveal key={post.slug} delay={i * 80}>
               <article className="group rounded-2xl border border-line bg-white hover:shadow-lg hover:shadow-verde/5 transition-all duration-300 overflow-hidden">
-                <div className="h-1 w-full" style={{ backgroundColor: "#C4714A" }} aria-hidden="true" />
+                <div className="h-1 w-full" style={{ backgroundColor: "#0099CC" }} aria-hidden="true" />
                 <div className="p-6 md:p-8">
                   <div className="flex flex-wrap items-center gap-3 mb-4">
                     <time dateTime={post.date} className="section-label text-muted">
