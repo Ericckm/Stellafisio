@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { useState } from "react";
 
 const WHATSAPP = "5515996758942";
@@ -20,14 +21,16 @@ export default function Header() {
     <header className="fixed top-0 left-0 right-0 z-50 bg-creme/90 backdrop-blur-md border-b border-line">
       <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between gap-8">
 
-        {/* Logo placeholder */}
+        {/* Logo */}
         <Link href="/" className="flex items-center gap-3 shrink-0" aria-label="Stella Sobral Fisioterapia — início">
-          <div
-            className="w-8 h-8 rounded-full border-2 border-verde flex items-center justify-center"
-            aria-hidden="true"
-          >
-            <div className="w-3 h-3 rounded-full bg-terra" />
-          </div>
+          <Image
+            src="/logo.png"
+            alt="Stella Sobral Fisioterapia"
+            width={40}
+            height={40}
+            priority
+            unoptimized
+          />
           <span className="font-heading text-lg font-600 text-verde leading-none tracking-wide">
             Stella Sobral
             <span className="block text-[10px] font-body font-400 tracking-widest text-muted uppercase leading-none mt-0.5">
