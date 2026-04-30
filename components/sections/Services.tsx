@@ -35,9 +35,9 @@ const services = [
     cta: "Cuidar de quem eu amo",
   },
   {
-    slug: "dores-cronicas",
+    slug: "dores-cronicas-e-agudas",
     accent: "#6B7B72",
-    tag: "Dores Crônicas",
+    tag: "Dores Crônicas e Agudas",
     title: "Dor Crônica Tem Tratamento — Tem Causa",
     description:
       "Anos convivendo com lombalgia, cervicalgia ou fibromialgia não significam que isso é \"normal para você\". Com avaliação que vai além do sintoma, identificamos o que sustenta a dor e tratamos com abordagem multimodal — exercício, terapia manual e educação.",

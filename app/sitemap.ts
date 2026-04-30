@@ -32,7 +32,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.9,
     },
     {
-      url: `${BASE_URL}/servicos/dores-cronicas`,
+      url: `${BASE_URL}/servicos/dores-cronicas-e-agudas`,
       lastModified: now,
       changeFrequency: "monthly",
       priority: 0.9,

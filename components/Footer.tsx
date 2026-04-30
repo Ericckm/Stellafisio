@@ -29,7 +29,7 @@ export default function Footer() {
               { href: "/servicos/reabilitacao", label: "Reabilitação Traumato-Ortopédica" },
               { href: "/servicos/fisioterapia-pos-operatoria", label: "Fisioterapia Pós-Cirúrgica" },
               { href: "/servicos/fisioterapia-para-idosos", label: "Fisioterapia para Idosos" },
-              { href: "/servicos/dores-cronicas", label: "Dores Crônicas" },
+              { href: "/servicos/dores-cronicas-e-agudas", label: "Dores Crônicas e Agudas" },
               { href: "/servicos/quiropraxia-instrumental", label: "Quiropraxia Instrumental" },
               { href: "/servicos/liberacao-miofascial-instrumental", label: "Liberação Miofascial" },
               { href: "/faq", label: "Perguntas Frequentes" },

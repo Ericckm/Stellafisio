@@ -101,7 +101,7 @@ export default function ReabilitacaoPage() {
             rel="noopener noreferrer"
             className="inline-flex items-center gap-3 bg-terra hover:bg-terra-light text-creme font-body font-500 text-base px-7 py-4 rounded-full transition-all duration-200 hover:shadow-lg hover:shadow-terra/30 hover:-translate-y-0.5"
           >
-            Agendar Avaliação Gratuita
+            Agendar Avaliação
           </a>
         </div>
       </section>

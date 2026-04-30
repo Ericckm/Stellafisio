@@ -6,7 +6,7 @@ import { serviceMeta } from "@/lib/metadata";
 import CTAFinal from "@/components/sections/CTAFinal";
 import Reveal from "@/components/Reveal";
 
-export const metadata: Metadata = serviceMeta["dores-cronicas"];
+export const metadata: Metadata = serviceMeta["dores-cronicas-e-agudas"];
 
 const WHATSAPP = "5515996758942";
 const WA_MSG = encodeURIComponent("Olá! Tenho interesse em fisioterapia para dores crônicas domiciliar — gostaria de agendar uma avaliação.");
@@ -30,7 +30,7 @@ export default function DoresCronicasPage() {
         style={{
           background: "radial-gradient(ellipse 80% 60% at 0% 30%, #2A5A40 0%, transparent 60%), radial-gradient(ellipse 60% 80% at 100% 0%, #1C3D2E 0%, transparent 55%), #1C3D2E",
         }}
-        aria-label="Fisioterapia para dores crônicas domiciliar"
+        aria-label="Fisioterapia para dores crônicas e agudas domiciliar"
       >
         <div className="relative max-w-5xl mx-auto px-6">
           <nav className="mb-8" aria-label="Breadcrumb">
@@ -39,7 +39,7 @@ export default function DoresCronicasPage() {
               <li aria-hidden="true">/</li>
               <li><Link href="/#servicos" className="hover:text-creme/70 transition-colors">Serviços</Link></li>
               <li aria-hidden="true">/</li>
-              <li className="text-terra" aria-current="page">Dores Crônicas</li>
+              <li className="text-terra" aria-current="page">Dores Crônicas e Agudas</li>
             </ol>
           </nav>
 
@@ -51,11 +51,11 @@ export default function DoresCronicasPage() {
             style={{ fontSize: "clamp(2.4rem, 6vw, 4.5rem)" }}
           >
             Fisioterapia para<br />
-            <em className="font-600 not-italic text-terra">Dores Crônicas</em><br />
+            <em className="font-600 not-italic text-terra">Dores Crônicas e Agudas</em><br />
             <span className="font-300">Domiciliar em SP</span>
           </h1>
           <p className="font-body font-300 text-creme/88 text-lg leading-relaxed max-w-xl mb-8">
-            Tratamento da causa — não apenas do sintoma. Fisioterapia domiciliar para lombalgia, cervicalgia, fibromialgia e tendinites no Itaim Bibi, Jardins e Pinheiros em São Paulo.
+            Tratamento da causa — não apenas do sintoma. Fisioterapia domiciliar para dores crônicas e agudas: lombalgia, cervicalgia, fibromialgia, tendinites e lesões recentes no Itaim Bibi, Jardins e Pinheiros em São Paulo.
           </p>
           <a
             href={`https://wa.me/${WHATSAPP}?text=${WA_MSG}`}
@@ -63,7 +63,7 @@ export default function DoresCronicasPage() {
             rel="noopener noreferrer"
             className="inline-flex items-center gap-3 bg-terra hover:bg-terra-light text-creme font-body font-500 text-base px-7 py-4 rounded-full transition-all duration-200 hover:shadow-lg hover:shadow-terra/30 hover:-translate-y-0.5"
           >
-            Agendar Avaliação Gratuita
+            Agendar Avaliação
           </a>
         </div>
       </section>

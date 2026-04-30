@@ -39,7 +39,7 @@ export default function CTAFinal() {
         </h2>
 
         <p className="font-body text-white/70 text-lg leading-relaxed mb-10 max-w-xl mx-auto">
-          Entre em contato agora e agende sua avaliação gratuita. A Stella cuida do resto.
+          Entre em contato agora e agende sua avaliação. A Stella cuida do resto.
         </p>
 
         <a
@@ -56,7 +56,6 @@ export default function CTAFinal() {
 
         <div className="mt-8 flex flex-wrap justify-center gap-6">
           {[
-            "Avaliação gratuita",
             "Sem encaminhamento necessário",
             "Resposta rápida",
           ].map((item) => (

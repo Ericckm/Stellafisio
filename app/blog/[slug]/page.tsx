@@ -150,7 +150,7 @@ export default async function PostPage({ params }: Props) {
                   </svg>
                   Agendar pelo WhatsApp
                 </a>
-                <p className="text-center font-body text-xs text-muted mt-3">Avaliação gratuita · Sem encaminhamento</p>
+                <p className="text-center font-body text-xs text-muted mt-3">Sem encaminhamento necessário</p>
               </div>
             </aside>
           </div>

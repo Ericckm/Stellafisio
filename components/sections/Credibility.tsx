@@ -72,7 +72,7 @@ export default function Credibility() {
                 Fisioterapeuta · CREFITO-3 297082 · São Paulo
               </p>
               <p className="font-body text-sm text-muted leading-relaxed max-w-2xl">
-                Especializada em reabilitação domiciliar, com foco em pacientes pós-cirúrgicos, idosos e quadros de dor crônica. Atendo no Itaim Bibi, Jardins, Moema e região — levando cuidado profissional até a sua casa.
+                Pós-graduada em ortopedia e traumatologia, com experiência em disfunções ortopédicas agudas e crônicas — lombalgia, cervicalgia, lesões de ombro, joelho e quadril —, reabilitação pós-operatória (artroplastias, ligamentoplastias, cirurgias de coluna e fraturas) e fisioterapia geriátrica com foco em equilíbrio, marcha e prevenção de quedas. Atendo no Itaim Bibi, Jardins, Moema e região — cuidado especializado e individualizado na sua casa.
               </p>
             </div>
           </div>

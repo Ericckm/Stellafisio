@@ -105,9 +105,9 @@ export const geriatriaSchema = {
 export const doresCronicasSchema = {
   "@context": "https://schema.org",
   "@type": "MedicalProcedure",
-  name: "Fisioterapia para Dores Crônicas Domiciliar",
+  name: "Fisioterapia para Dores Crônicas e Agudas Domiciliar",
   description:
-    "Tratamento fisioterapêutico domiciliar para lombalgia, cervicalgia, fibromialgia e tendinites crônicas, com abordagem multimodal e educação do paciente em São Paulo.",
+    "Tratamento fisioterapêutico domiciliar para dores crônicas e agudas — lombalgia, cervicalgia, fibromialgia, tendinites e lesões recentes — com abordagem multimodal e educação do paciente em São Paulo.",
   procedureType: "Physical Therapy",
   bodyLocation: "Musculoskeletal",
   followup: "Plano de exercícios domiciliares e reavaliação de dor",
