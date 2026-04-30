@@ -1,3 +1,5 @@
+import type { Post } from "./blog";
+
 const BASE_URL = "https://stellasobral.com.br";
 const PHONE = "+55 15 99675-8942";
 const WHATSAPP = "5515996758942";
@@ -210,3 +212,31 @@ export const faqSchema = {
     },
   ],
 };
+
+export function articleSchema(post: Pick<Post, "slug" | "title" | "excerpt" | "date">) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline: post.title,
+    description: post.excerpt,
+    datePublished: post.date,
+    dateModified: post.date,
+    url: `${BASE_URL}/blog/${post.slug}`,
+    author: {
+      "@type": "Person",
+      name: "Stella Sobral",
+      jobTitle: "Fisioterapeuta",
+      url: BASE_URL,
+    },
+    publisher: {
+      "@type": "Organization",
+      name: "Stella Sobral Fisioterapia Domiciliar",
+      url: BASE_URL,
+      logo: { "@type": "ImageObject", url: `${BASE_URL}/logo.png` },
+    },
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id": `${BASE_URL}/blog/${post.slug}`,
+    },
+  };
+}

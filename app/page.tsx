@@ -6,6 +6,7 @@ import HowItWorks from "@/components/sections/HowItWorks";
 import ServiceArea from "@/components/sections/ServiceArea";
 import Testimonials from "@/components/sections/Testimonials";
 import FAQSection from "@/components/sections/FAQ";
+import BlogPreview from "@/components/sections/BlogPreview";
 import CTAFinal from "@/components/sections/CTAFinal";
 
 export default function HomePage() {
@@ -19,6 +20,7 @@ export default function HomePage() {
       <ServiceArea />
       <Testimonials />
       <FAQSection />
+      <BlogPreview />
       <CTAFinal />
     </>
   );
