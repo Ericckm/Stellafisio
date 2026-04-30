@@ -42,15 +42,25 @@ export default function Header() {
 
         {/* Desktop nav */}
         <nav className="hidden md:flex items-center gap-8" aria-label="Navegação principal">
-          {navLinks.map((link) => (
-            <Link
-              key={link.href}
-              href={link.href}
-              className="font-body text-sm text-charcoal/70 hover:text-verde transition-colors duration-200"
-            >
-              {link.label}
-            </Link>
-          ))}
+          {navLinks.map((link) =>
+            link.href.startsWith("/#") ? (
+              <a
+                key={link.href}
+                href={link.href}
+                className="font-body text-sm text-charcoal/70 hover:text-verde transition-colors duration-200"
+              >
+                {link.label}
+              </a>
+            ) : (
+              <Link
+                key={link.href}
+                href={link.href}
+                className="font-body text-sm text-charcoal/70 hover:text-verde transition-colors duration-200"
+              >
+                {link.label}
+              </Link>
+            )
+          )}
         </nav>
 
         {/* Desktop CTA */}
@@ -86,16 +96,27 @@ export default function Header() {
       {/* Mobile menu */}
       {open && (
         <div className="md:hidden bg-creme border-t border-line px-6 py-4 flex flex-col gap-4">
-          {navLinks.map((link) => (
-            <Link
-              key={link.href}
-              href={link.href}
-              className="font-body text-base text-charcoal/80 hover:text-verde transition-colors"
-              onClick={() => setOpen(false)}
-            >
-              {link.label}
-            </Link>
-          ))}
+          {navLinks.map((link) =>
+            link.href.startsWith("/#") ? (
+              <a
+                key={link.href}
+                href={link.href}
+                className="font-body text-base text-charcoal/80 hover:text-verde transition-colors"
+                onClick={() => setOpen(false)}
+              >
+                {link.label}
+              </a>
+            ) : (
+              <Link
+                key={link.href}
+                href={link.href}
+                className="font-body text-base text-charcoal/80 hover:text-verde transition-colors"
+                onClick={() => setOpen(false)}
+              >
+                {link.label}
+              </Link>
+            )
+          )}
           <a
             href={`https://wa.me/${WHATSAPP}?text=${WA_MSG}`}
             target="_blank"
