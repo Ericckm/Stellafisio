@@ -124,7 +124,7 @@ export default function Services() {
                   style={{ background: "linear-gradient(90deg, #0099CC 0%, #0099CC44 100%)" }}
                   aria-hidden="true"
                 />
-              </span>,<br />
+              </span><br />
               <em className="font-600 not-italic">com a tranquilidade e praticidade do atendimento domiciliar</em>
             </h2>
             <p className="font-body text-sm text-muted mt-4 max-w-xl leading-relaxed">

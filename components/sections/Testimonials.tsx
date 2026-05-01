@@ -2,15 +2,15 @@ import Reveal from "@/components/Reveal";
 
 const testimonials = [
   {
-    name: "Maria Clara F.",
-    specialty: "Pós-cirúrgica — Joelho",
-    quote: "Fiz a cirurgia do LCA e em duas semanas já estava recebendo a Stella em casa. A recuperação foi muito mais rápida do que eu esperava. Sem o cansaço do deslocamento, conseguia focar 100% no tratamento.",
+    name: "Cesar",
+    specialty: "Dor Crônica — Joelho",
+    quote: "Estava com uma dor constante no joelho que incomodava bastante e mesmo usando diversos medicamentos não estava resolvendo. Stella veio até minha residência e já na primeira sessão senti uma melhora significativa e hoje já não sinto mais dor.",
     rating: 5,
   },
   {
-    name: "Roberto A.",
-    specialty: "Geriatria — meu pai, 82 anos",
-    quote: "Meu pai teve muito medo de sair de casa após a fratura. A Stella trouxe toda a confiança e profissionalismo até a nossa porta. Em dois meses ele voltou a caminhar com segurança.",
+    name: "Natália Gonçalves",
+    specialty: "Reabilitação — mãe da paciente",
+    quote: "Profissional cuidadosa, dedicada e com domínio técnico impressionante. Foi fundamental na reabilitação da minha mãe em duas ocasiões, sempre com atenção individualizada e muita sensibilidade! Recomendo de olhos fechados!",
     rating: 5,
   },
   {
