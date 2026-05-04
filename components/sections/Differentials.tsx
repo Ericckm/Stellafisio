@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Reveal from "@/components/Reveal";
 
 const items = [
@@ -37,8 +38,38 @@ const items = [
 
 export default function Differentials() {
   return (
-    <section className="bg-verde py-20 md:py-28" aria-label="Vantagens do atendimento domiciliar">
-      <div className="max-w-6xl mx-auto px-6">
+    <section className="relative bg-verde py-20 md:py-28 overflow-hidden" aria-label="Vantagens do atendimento domiciliar">
+      {/* Background image */}
+      <div className="absolute inset-0">
+        <Image
+          src="/stella-differentials.png"
+          alt=""
+          fill
+          quality={90}
+          className="object-cover object-[55%_center] scale-105"
+          aria-hidden="true"
+        />
+        <div
+          className="absolute inset-0"
+          style={{
+            background: `
+              linear-gradient(to right,
+                rgba(0,56,84,0.95) 0%,
+                rgba(0,56,84,0.88) 40%,
+                rgba(0,56,84,0.60) 65%,
+                rgba(0,56,84,0.30) 100%
+              ),
+              linear-gradient(to top,
+                rgba(0,30,50,0.70) 0%,
+                transparent 30%
+              )
+            `,
+          }}
+          aria-hidden="true"
+        />
+      </div>
+
+      <div className="relative max-w-6xl mx-auto px-6">
         <Reveal>
           <div className="mb-14">
             <span className="section-label text-terra mb-3 block">Fisioterapia Domiciliar vs. Clínica</span>
