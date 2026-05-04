@@ -47,7 +47,7 @@ export default function Credibility() {
                 <p className="font-body font-500 text-sm text-terra tracking-wide uppercase">
                   {stat.label}
                 </p>
-                <p className="font-body text-sm text-muted leading-relaxed">
+                <p className="font-body font-500 text-sm text-muted leading-relaxed">
                   {stat.description}
                 </p>
               </div>
@@ -67,18 +67,18 @@ export default function Credibility() {
               <Image
                 src="/stella.jpg"
                 alt="Stella Sobral, fisioterapeuta domiciliar em São Paulo"
-                width={72}
-                height={72}
-                className="shrink-0 w-16 h-16 rounded-full object-cover border-2 border-verde/20"
+                width={112}
+                height={112}
+                className="shrink-0 w-24 h-24 md:w-28 md:h-28 rounded-full object-cover border-2 border-verde/20"
                 priority
                 unoptimized
               />
               <div>
-                <p className="font-heading text-xl font-600 text-verde mb-1">Stella Sobral</p>
-                <p className="font-body text-xs tracking-widest uppercase text-terra mb-2">
+                <p className="font-heading text-2xl md:text-3xl font-600 text-verde mb-1">Stella Sobral</p>
+                <p className="font-body text-sm tracking-widest uppercase text-terra mb-3">
                   Fisioterapeuta · CREFITO-3 297082 · São Paulo
                 </p>
-                <p className="font-body text-sm text-muted leading-relaxed max-w-2xl">
+                <p className="font-body font-500 text-sm text-muted leading-relaxed max-w-2xl">
                   Pós-graduada em ortopedia e traumatologia, com experiência em disfunções ortopédicas agudas e crônicas — lombalgia, cervicalgia, lesões de ombro, joelho e quadril, entre outras —, reabilitação pós-operatória (artroplastias, ligamentoplastias, cirurgias de coluna e fraturas) e experiência em fisioterapia geriátrica com foco em equilíbrio, marcha e prevenção de quedas. Atendo no Itaim Bibi, Jardins, Moema e região — cuidado especializado e individualizado na sua casa.
                 </p>
               </div>

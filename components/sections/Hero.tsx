@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 const WHATSAPP = "5515996758942";
 const WA_MSG = encodeURIComponent("Olá! Gostaria de agendar uma avaliação de fisioterapia domiciliar.");
@@ -9,37 +10,37 @@ export default function Hero() {
       className="relative min-h-screen flex flex-col justify-center overflow-hidden pt-16"
       aria-label="Apresentação — Fisioterapia Domiciliar Stella Sobral"
     >
-      {/* Background gradient mesh */}
-      <div
-        className="absolute inset-0"
-        style={{
-          background: `
-            radial-gradient(ellipse 80% 60% at 0% 20%, #005E80 0%, transparent 60%),
-            radial-gradient(ellipse 60% 80% at 100% 10%, #003D5C 0%, transparent 55%),
-            radial-gradient(ellipse 100% 50% at 50% 100%, #002233 0%, transparent 65%),
-            #003D5C
-          `,
-        }}
-        aria-hidden="true"
-      />
-
-      {/* Decorative large italic background text */}
-      <span
-        className="absolute right-0 bottom-16 font-heading italic text-[18vw] leading-none text-creme/[0.04] pointer-events-none select-none hidden md:block"
-        aria-hidden="true"
-      >
-        Fisioterapia
-      </span>
-
-      {/* Decorative circle */}
-      <div
-        className="absolute top-24 right-[10%] w-64 h-64 rounded-full border border-creme/10 hidden lg:block"
-        aria-hidden="true"
-      />
-      <div
-        className="absolute top-36 right-[12%] w-40 h-40 rounded-full border border-creme/5 hidden lg:block"
-        aria-hidden="true"
-      />
+      {/* Background image */}
+      <div className="absolute inset-0 overflow-hidden">
+        <Image
+          src="/stella-hero.png"
+          alt=""
+          fill
+          priority
+          quality={90}
+          className="object-cover object-[60%_center] scale-105"
+          aria-hidden="true"
+        />
+        {/* Gradient overlay: opaque navy left → transparent right + dark bottom edge */}
+        <div
+          className="absolute inset-0"
+          style={{
+            background: `
+              linear-gradient(to right,
+                rgba(0,56,84,0.90) 0%,
+                rgba(0,56,84,0.72) 5%,
+                rgba(0,56,84,0.35) 60%,
+                rgba(0,56,84,0.08) 100%
+              ),
+              linear-gradient(to top,
+                rgba(0,30,50,0.65) 0%,
+                transparent 15%
+              )
+            `,
+          }}
+          aria-hidden="true"
+        />
+      </div>
 
       {/* Content */}
       <div className="relative max-w-6xl mx-auto px-6 py-20 md:py-32 w-full">
@@ -47,7 +48,7 @@ export default function Hero() {
 
           {/* Location badge */}
           <div className="hero-headline">
-            <span className="inline-flex items-center gap-2 bg-terra/20 text-terra border border-terra/30 text-xs font-body font-500 tracking-widest uppercase px-4 py-1.5 rounded-full mb-8">
+            <span className="inline-flex items-center gap-2 bg-terra/20 text-creme  border border-terra/30 text-xs font-body font-500 tracking-widest uppercase px-4 py-1.5 rounded-full mb-8">
               <svg width="10" height="10" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
                 <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" />
               </svg>
