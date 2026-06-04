@@ -71,6 +71,72 @@ export const localBusinessSchema = {
     `https://wa.me/${WHATSAPP}`,
     "https://www.instagram.com/fisio.sobral",
   ],
+  hasOfferCatalog: {
+    "@type": "OfferCatalog",
+    name: "Serviços de Fisioterapia Domiciliar",
+    itemListElement: [
+      {
+        "@type": "Offer",
+        itemOffered: {
+          "@type": "MedicalProcedure",
+          name: "Fisioterapia Pós-Operatória Domiciliar",
+          description:
+            "Reabilitação especializada após cirurgias ortopédicas — artroplastias de joelho e quadril, ligamentoplastias, cirurgias de ombro e coluna. Protocolo individualizado iniciado precocemente, no conforto do domicílio.",
+          url: `${BASE_URL}/servicos/fisioterapia-pos-operatoria`,
+        },
+      },
+      {
+        "@type": "Offer",
+        itemOffered: {
+          "@type": "MedicalProcedure",
+          name: "Fisioterapia Geriátrica Domiciliar para Idosos",
+          description:
+            "Fisioterapia domiciliar para idosos com foco em equilíbrio, marcha, força muscular e prevenção de quedas. Manutenção da independência funcional e qualidade de vida.",
+          url: `${BASE_URL}/servicos/fisioterapia-para-idosos`,
+        },
+      },
+      {
+        "@type": "Offer",
+        itemOffered: {
+          "@type": "MedicalProcedure",
+          name: "Fisioterapia para Dores Crônicas e Agudas Domiciliar",
+          description:
+            "Tratamento domiciliar para lombalgia, cervicalgia, fibromialgia, tendinites, bursites e artrose. Abordagem multimodal com educação do paciente e exercícios progressivos.",
+          url: `${BASE_URL}/servicos/dores-cronicas-e-agudas`,
+        },
+      },
+      {
+        "@type": "Offer",
+        itemOffered: {
+          "@type": "MedicalProcedure",
+          name: "Reabilitação Traumato-Ortopédica Domiciliar",
+          description:
+            "Reabilitação estruturada em fases para fraturas, rupturas ligamentares, luxações e traumas ortopédicos. Protocolo progressivo com critérios clínicos de evolução.",
+          url: `${BASE_URL}/servicos/reabilitacao`,
+        },
+      },
+      {
+        "@type": "Offer",
+        itemOffered: {
+          "@type": "MedicalProcedure",
+          name: "Quiropraxia Instrumental Domiciliar",
+          description:
+            "Ajuste articular de alta precisão com instrumentos especializados, sem estalidos. Indicado para bloqueios vertebrais, cefaleia tensional e rigidez articular.",
+          url: `${BASE_URL}/servicos/quiropraxia-instrumental`,
+        },
+      },
+      {
+        "@type": "Offer",
+        itemOffered: {
+          "@type": "MedicalProcedure",
+          name: "Liberação Miofascial Instrumental Domiciliar",
+          description:
+            "Técnica IASTM para tratamento de aderências fasciais, cicatrizes pós-cirúrgicas e tendinopatias crônicas. Menos dolorosa e mais eficaz que a liberação manual tradicional.",
+          url: `${BASE_URL}/servicos/liberacao-miofascial-instrumental`,
+        },
+      },
+    ],
+  },
 };
 
 export const posCircurgicaSchema = {
