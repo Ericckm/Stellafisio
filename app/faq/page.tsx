@@ -8,6 +8,9 @@ export const metadata: Metadata = {
   title: "Dúvidas Frequentes — Fisioterapia Domiciliar SP | Stella Sobral",
   description:
     "Tire todas as dúvidas sobre fisioterapia domiciliar particular em São Paulo: valores, área de atendimento, duração das sessões e encaminhamento médico.",
+  alternates: {
+    canonical: "https://stellasobralfisioterapia.com.br/faq",
+  },
 };
 
 const faqs = [

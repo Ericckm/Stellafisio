@@ -95,12 +95,14 @@ export const baseMetadata: Metadata = {
     title: "Fisioterapia Domiciliar no Itaim Bibi: Agende Agora | Stella Sobral",
     description:
       "Pós-graduada em ortopedia e traumatologia. Fisioterapia domiciliar em Itaim Bibi, Jardins e Moema — disfunções ortopédicas agudas e crônicas, reabilitação pós-cirúrgica e geriatria.",
+    images: [{ url: `${BASE_URL}/stella-hero.png`, width: 1200, height: 630, alt: "Stella Sobral Fisioterapia Domiciliar" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Fisioterapia Domiciliar no Itaim Bibi: Agende Agora | Stella Sobral",
     description:
       "Pós-graduada em ortopedia e traumatologia. Fisioterapia domiciliar em Itaim Bibi, Jardins e Moema — disfunções ortopédicas agudas e crônicas, reabilitação pós-cirúrgica e geriatria.",
+    images: [`${BASE_URL}/stella-hero.png`],
   },
   robots: {
     index: true,
@@ -127,6 +129,7 @@ export const serviceMeta: Record<string, Metadata> = {
       title: "Fisioterapia Pós-Operatória Domiciliar SP | Stella Sobral",
       description:
         "Reabilitação pós-cirúrgica ortopédica em casa — artroplastias, ligamentoplastias, cirurgias de coluna e fraturas. Atendimento no Itaim Bibi, Jardins e Moema.",
+      images: [{ url: `${BASE_URL}/stella-hero.png`, width: 1200, height: 630, alt: "Stella Sobral Fisioterapia Domiciliar" }],
     },
   },
   "fisioterapia-para-idosos": {
@@ -140,6 +143,7 @@ export const serviceMeta: Record<string, Metadata> = {
       title: "Fisioterapia Domiciliar para Idosos SP | Stella Sobral",
       description:
         "Fisioterapia geriátrica domiciliar em São Paulo. Equilíbrio, marcha, força muscular e prevenção de quedas.",
+      images: [{ url: `${BASE_URL}/stella-hero.png`, width: 1200, height: 630, alt: "Stella Sobral Fisioterapia Domiciliar" }],
     },
   },
   "dores-cronicas-e-agudas": {
@@ -151,6 +155,7 @@ export const serviceMeta: Record<string, Metadata> = {
       title: "Fisioterapia para Dores Crônicas e Agudas Domiciliar SP | Stella Sobral",
       description:
         "Tratamento de lombalgia, cervicalgia, dores musculares agudas e crônicas em casa. Fisioterapeuta domiciliar no Itaim Bibi, Jardins e Pinheiros.",
+      images: [{ url: `${BASE_URL}/stella-hero.png`, width: 1200, height: 630, alt: "Stella Sobral Fisioterapia Domiciliar" }],
     },
   },
   "reabilitacao": {
@@ -162,6 +167,7 @@ export const serviceMeta: Record<string, Metadata> = {
       title: "Reabilitação Traumato-Ortopédica Domiciliar SP | Stella Sobral",
       description:
         "Reabilitação ortopédica em casa após fraturas, rupturas ligamentares e lesões musculares. Itaim Bibi, Jardins e Moema.",
+      images: [{ url: `${BASE_URL}/stella-hero.png`, width: 1200, height: 630, alt: "Stella Sobral Fisioterapia Domiciliar" }],
     },
   },
   "quiropraxia-instrumental": {
@@ -173,6 +179,7 @@ export const serviceMeta: Record<string, Metadata> = {
       title: "Quiropraxia Instrumental Domiciliar SP | Stella Sobral",
       description:
         "Ajuste articular de alta precisão sem estalidos. Quiropraxia instrumental domiciliar para bloqueios vertebrais e rigidez articular em São Paulo.",
+      images: [{ url: `${BASE_URL}/stella-hero.png`, width: 1200, height: 630, alt: "Stella Sobral Fisioterapia Domiciliar" }],
     },
   },
   "liberacao-miofascial-instrumental": {
@@ -184,6 +191,7 @@ export const serviceMeta: Record<string, Metadata> = {
       title: "Liberação Miofascial Domiciliar SP | Stella Sobral",
       description:
         "Liberação miofascial com instrumentos especializados — menos dolorosa e mais eficaz. Tratamento domiciliar de tensões e aderências em São Paulo.",
+      images: [{ url: `${BASE_URL}/stella-hero.png`, width: 1200, height: 630, alt: "Stella Sobral Fisioterapia Domiciliar" }],
     },
   },
 };
