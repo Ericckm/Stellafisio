@@ -84,6 +84,9 @@ export const baseMetadata: Metadata = {
     "Stella Sobral fisioterapeuta Itaim Bibi",
   ],
   authors: [{ name: "Stella Sobral" }],
+  verification: {
+    google: "HOJ_JZIsfIHuXMElWom4c52nN93gPl_-nAIOn5LxfrE",
+  },
   alternates: {
     canonical: BASE_URL,
   },
